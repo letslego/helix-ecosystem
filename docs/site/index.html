@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Helix Ecosystem — LetsLego</title>
+  <meta name="description" content="The open Helix stack: workflows, AI gateway, sandbox, connect, channels, and the agent framework." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <header>
+    <a class="brand" href="./">Helix Ecosystem</a>
+    <nav>
+      <a href="https://letslego.github.io/helix/">Framework</a>
+      <a href="https://github.com/letslego">GitHub</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">LetsLego · Open source</p>
+    <h1>Helix</h1>
+    <p class="lede">The whole agent stack — split into packages you can inspect, replace, and run locally.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/letslego/helix">Start with Helix</a>
+      <a class="btn ghost" href="#packages">Browse packages</a>
+    </div>
+  </section>
+
+  <section id="packages" class="section">
+    <h2>Packages</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="section">
+    <h2>Architecture</h2>
+    <pre class="diagram"><code>Helix framework
+├── helix-workflow   durable steps · park/resume
+├── helix-gateway    model routing · fallbacks
+├── helix-sandbox    isolated FS · bash
+├── helix-connect    brokered credentials
+└── helix-channels   HTTP · web · Slack · Discord</code></pre>
+  </section>
+
+  <footer>
+    <span>Helix Ecosystem by LetsLego</span>
+    <span>Apache-2.0</span>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+</html>
