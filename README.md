@@ -15,6 +15,9 @@ The open stack for building durable AI agents — filesystem-first, local-first,
 | [helix-connect](https://github.com/letslego/helix-connect) | `@letslego/helix-connect` | Connect — credential-brokered MCP/OpenAPI |
 | [helix-channels](https://github.com/letslego/helix-channels) | `@letslego/helix-channels` | Channels — HTTP, web, Slack, Discord |
 | [helix-templates](https://github.com/letslego/helix-templates) | — | Starter agent templates |
+| [helix-sdk](https://github.com/letslego/helix-sdk) | `@letslego/helix-sdk` | TypeScript client for `/helix/v1` |
+| [helix-sdk-python](https://github.com/letslego/helix-sdk-python) | `letslego-helix` | Python client for `/helix/v1` |
+| [helix-sdk-go](https://github.com/letslego/helix-sdk-go) | `github.com/letslego/helix-sdk-go` | Go client for `/helix/v1` |
 
 ## How it maps
 
@@ -42,6 +45,22 @@ Or compose packages directly:
 
 ```bash
 npm install @letslego/helix-workflow @letslego/helix-gateway @letslego/helix-sandbox @letslego/helix-connect @letslego/helix-channels
+```
+
+## Client SDKs
+
+Talk to a running console (`npx helix console`) from any language:
+
+```bash
+npm install @letslego/helix-sdk
+pip install letslego-helix
+go get github.com/letslego/helix-sdk-go
+```
+
+```ts
+import { HelixClient } from "@letslego/helix-sdk";
+const helix = new HelixClient({ baseUrl: "http://127.0.0.1:8787" });
+const turn = await helix.chat("Plan a weekend in Paris", undefined, { autoApprove: true });
 ```
 
 ## License

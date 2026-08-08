@@ -41,6 +41,24 @@ const packages = [
     desc: "Starter agents and examples you can clone.",
     url: "https://github.com/letslego/helix-templates",
   },
+  {
+    name: "helix-sdk",
+    pkg: "@letslego/helix-sdk",
+    desc: "TypeScript SDK for the Helix HTTP API.",
+    url: "https://github.com/letslego/helix-sdk",
+  },
+  {
+    name: "helix-sdk-python",
+    pkg: "letslego-helix",
+    desc: "Python SDK for the Helix HTTP API.",
+    url: "https://github.com/letslego/helix-sdk-python",
+  },
+  {
+    name: "helix-sdk-go",
+    pkg: "helix-sdk-go",
+    desc: "Go SDK for the Helix HTTP API.",
+    url: "https://github.com/letslego/helix-sdk-go",
+  },
 ];
 
 document.getElementById("grid").innerHTML = packages
